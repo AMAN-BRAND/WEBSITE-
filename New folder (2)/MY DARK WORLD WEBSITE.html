@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H4CKER AMAN...? Pvt. Ltd.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .top-bar div {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: orange;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            background: url('https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-3075993.jpg&fm=jpg') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .bus-illustration {
+            margin-top: 40px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-border {
+            margin-top: 40px;
+            background: linear-gradient(to right, orange 20%, green 80%);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .announcement {
+            background-color: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .announcement h2 {
+            margin-bottom: 10px;
+        }
+
+        .facilities {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: #eef2f3;
+        }
+
+        .facility {
+            width: 25%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .facility:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .facility h3 {
+            margin-bottom: 10px;
+        }
+
+        .form-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #333;
+            background-color: #fff;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-popup input[type="text"],
+        .form-popup input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .form-popup button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+            <span><i class="fas fa-phone"></i> 9821474104</span>
+            <span><i class="fas fa-envelope"></i> mallikaman546@gmail.com</span>
+            <span><i class="fas fa-map-marker-alt"></i> Rajbiraj -5, Saptari, Madhesh Province</span>
+        </div>
+        <div>
+            <button onclick="openForm()">Login / Apply Online</button>
+        </div>
+    </div>
+
+    <nav>
+        <div><strong>H4CKER AMAN...?</strong></div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Facility</a>
+            <a href="#">Notice</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact Us</a>
+            <a href="#">News</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        MY DARK WORLD..
+    </div>
+
+    <div class="announcement">
+        <h2>Notice Board.</h2>
+        <p>Admissions Open for 2082! Apply Now.</p>
+    </div>
+
+    <div class="facilities">
+        <div class="facility">
+            <h3>DARK WORLDS BOOK.</h3>
+            <p>Fully stocked library with academic and non-academic resources.</p>
+        </div>
+        <div class="facility">
+            <h3>TESTING GIRLS BLOOD IN LAB.</h3>
+            <p>Well-equipped lab for practical experiments.</p>
+        </div>
+        <div class="facility">
+            <h3>SEARCHING ABOUT KIDNEY.</h3>
+            <p>SELL KIDNEY AT THE PRICE OF 10000000000000000000000000000RS.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>This Is My World In This World I Will Do Any Thing.</p>
+
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-border">
+        <marquee>My Dark World.</marquee>
+        <p>&copy; H4CKER AMAN.../ Pvt. Ltd. All rights reserved.</p>
+    </div>
+
+    <!-- Popup Form -->
+    <div class="form-popup" id="applyForm">
+        <h3>Apply Online</h3>
+        <form onsubmit="submitForm(event)">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="message" placeholder="Your Message" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById('applyForm').style.display = 'block';
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            alert('Your application has been submitted. We will contact you soon.');
+            document.getElementById('applyForm').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
